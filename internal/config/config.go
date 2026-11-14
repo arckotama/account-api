@@ -20,9 +20,9 @@ func Load() Config { // baru
 	return Config{
 		DBHost:     getEnv("DB_HOST", "db"),
 		DBPort:     getEnv("DB_PORT", "5432"),
-		DBUser:     getEnv("DB_USER", "account_user"),
-		DBPassword: getEnv("DB_PASSWORD", "account_pass"),
-		DBName:     getEnv("DB_NAME", "account_db"),
+		DBUser:     getEnv("DB_USER"),
+		DBPassword: getEnv("DB_PASSWORD"),
+		DBName:     getEnv("DB_NAME"),
 		AppPort:    getEnv("APP_PORT", "8080"),
 	}
 }
