@@ -59,6 +59,11 @@ flowchart LR
 - Windows dengan **WSL2** (distro apa pun, contoh: Ubuntu)
 - **Docker** dengan integrasi WSL2 aktif (Docker Desktop, atau Docker Engine di dalam WSL2)
 - Git
+```bash
+docker pull postgres:16-alpine
+docker pull golang:1.25-alpine
+docker pull migrate/migrate:v4.17.1
+```
 
 Go dan PostgreSQL **tidak perlu** diinstal.
 
