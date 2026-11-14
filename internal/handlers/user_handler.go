@@ -63,7 +63,7 @@ func (h *UserHandler) Create(w http.ResponseWriter, r *http.Request) { // baru
 	user := models.User{Name: req.Name, Email: req.Email}
 
 	if err := h.DB.Create(&user).Error; err != nil {
-		println("ERROR CREATE USER:", err.Error())
+		//println("ERROR CREATE USER:", err.Error())
 		if errors.Is(err, gorm.ErrDuplicatedKey) {
 			writeError(w, http.StatusConflict, "email sudah dipakai")
 			return
