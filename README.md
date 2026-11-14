@@ -60,8 +60,8 @@ flowchart LR
 - **Docker** dengan integrasi WSL2 aktif (Docker Desktop, atau Docker Engine di dalam WSL2)
 - Git
 ```bash
-docker pull postgres:18.6-alpine
-docker pull golang:1.27.3-alpine
+docker pull postgres:18.6-alpine3.24
+docker pull golang:1.27.3-alpine3.24
 docker pull migrate/migrate:v4.20.1
 ```
 
